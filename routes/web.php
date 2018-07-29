@@ -38,8 +38,10 @@ Route::group(['middleware' => ['web', 'auth']], function (){
     Route::resource('summary', 'SummaryCtrl');
     Route::resource('phrase', 'PhraseCtrl');
     Route::get('phrase/index/{id}', 'PhraseCtrl@index');
+    Route::resource('exam', 'ExamCtrl');
+    Route::resource('exam-exercise', 'ExamExerciseCtrl');
 
 });
-Auth::routes();
 
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

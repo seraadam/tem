@@ -75,7 +75,11 @@
                 @foreach ($categories as $category)
                     <tr>
                         <td>{{ $category->id }}</td>
-                        <td>{{ $category->category }}</td>
+                        <td>
+                            <a href="{{ url('category', $category->id) }}">
+                                {{ $category->category }}
+                            </a>
+                        </td>
                         <td>{{ $category->lessons->count() }}</td>
                         <td class="text-center"><img src="{{ url('admin/images/category', $category->logo) }}" alt="" class="img-size" /></td>
                         <td>{{ Helper::convertBoolValue($category->is_active) }}</td>

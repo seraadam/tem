@@ -17,7 +17,7 @@ class CreateOrganizationsTable extends Migration
             $table->increments('id');
             $table->string('organization');
             $table->string('avatar')->nullable();
-            $table->string('desc');
+            $table->string('desc')->nullable();
             $table->bigInteger('mobile')->nullable();
             $table->string('instagram')->nullable();
             $table->string('email')->nullable();

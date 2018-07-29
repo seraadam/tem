@@ -25,4 +25,8 @@ class Exercise extends Model
     public function corrections(){
         return $this->hasMany('App\Correction');
     }
+
+    public function examExercise(){
+        return $this->hasMany('App\ExamExercise');
+    }
 }

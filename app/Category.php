@@ -21,4 +21,8 @@ class Category extends Model
     public function exercies(){
     	return $this->hasManyThrough('App\Exercise', 'App\Lesson');
     }
+
+    public function exams(){
+    	return $this->hasMany('App\Exam');
+    }
 }
