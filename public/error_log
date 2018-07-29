@@ -1,0 +1,10 @@
+[25-Jul-2018 17:37:47 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/w8fj0p446mq1/Tamayyozz/app/Http/Controllers/ClientApi.php on line 7
+[26-Jul-2018 18:01:12 UTC] PHP Fatal error:  Uncaught ErrorException: include(/home/w8fj0p446mq1/Tamayyozz/vendor/composer/../../app/Exceptions/Handler.php): failed to open stream: No such file or directory in /home/w8fj0p446mq1/Tamayyozz/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/w8fj0p446mq1/Tamayyozz/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(/home/w...', '/home/w8fj0p446...', 444, Array)
+#1 /home/w8fj0p446mq1/Tamayyozz/vendor/composer/ClassLoader.php(444): include()
+#2 /home/w8fj0p446mq1/Tamayyozz/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/w8fj0p446...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/w8fj0p446mq1/Tamayyozz/vendor/laravel/framework/src/Illuminate/Container/Container.php(767): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/w8fj0p446mq1/Tamayyozz/vendor/laravel/framework/src/Illuminate/Contai in /home/w8fj0p446mq1/Tamayyozz/vendor/composer/ClassLoader.php on line 444

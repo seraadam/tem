@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'JF-Flat';
+    src: url("../fonts/JF-Flat-regular.woff");
+}
+
+@font-face {
+    font-family: 'DroidKufi';
+    src: url("../fonts/DroidKufi/DroidKufi-Regular.woff");
+}
+
+@font-face {
+    font-family: 'mohareb';
+    src: url("../fonts/mohareb-anboby.ttf");
+}
+
+body{
+    font-family: "JF-Flat";
+    /*font-family: "DroidKufi";*/
+     background-color: #fafbf9;
+    color: #636b6f;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+}
+
+.img-size {
+    height: 200px;
+
+}

@@ -1,0 +1,15 @@
+.leading-title{
+  border-bottom: 2px solid lightblue;
+  margin-bottom: 20px;
+}
+
+a {
+  /*color: #fff;*/
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
