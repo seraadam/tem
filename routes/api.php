@@ -19,4 +19,5 @@ use Illuminate\Http\Request;
 
 
 Route::get('get-groups', 'AppClientCtrl@getGroups');
-Route::post('get-exercises', 'AppClientCtrl@getExercises');
+Route::post('get-book', 'AppClientCtrl@getBook');
+Route::post('get-exercise', 'AppClientCtrl@getExercise');

@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="col-md-10">
-            @include('includes.leading-title', ['title' => $exam->exam])
+            @include('includes.leading-title', ['title' => $exam->exam . ' (' .  count($exam->examExercises) . ')'])
         </div>
         <div class="col-md-2 text-xl-left">
             <a href="{{ url('book', $exam->category->book->id) }}" class="btn btn-warning">
@@ -52,6 +52,7 @@
             <tr>
                 <th>#</th>
                 <th>التدريب</th>
+                <th>-</th>
             </tr>
             </thead>
 
@@ -61,14 +62,11 @@
                 <tr>
                     <td>{{ $examExercise->id }}</td>
                     <td>{{ $examExercise->exercise->exercise }}</td>
+                    <td>
+                        @include('includes.edit-delete', ['model' => 'exam-exercise', 'id' => $examExercise->id])
+                    </td>
                 </tr>
             @endforeach
-            {{--@foreach($exam->examExercises as $ee)--}}
-                {{--<tr>--}}
-                    {{--<td>{{ $exercise->id }}</td>--}}
-                    {{--<td>{{ $exercise->exercise->exercise }}</td>--}}
-                {{--</tr>--}}
-            {{--@foreach--}}
             </tbody>
         </table>
     </div>

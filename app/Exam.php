@@ -15,4 +15,8 @@ class Exam extends Model
     public function examExercises(){
         return $this->hasMany('App\ExamExercise');
     }
+
+    public function exercises(){
+        return $this->hasManyThrough('App\Exercise', 'App\ExamExercise');
+    }
 }

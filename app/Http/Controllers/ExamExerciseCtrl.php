@@ -83,6 +83,9 @@ class ExamExerciseCtrl extends Controller
      */
     public function destroy($id)
     {
-        //
+        $task = ExamExercise::find($id);
+        $task->delete();
+        \Helper::flashMessage();
+        return redirect()->back();
     }
 }
