@@ -77,6 +77,7 @@ class AppClientCtrl extends Controller
         if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){
             $user = Auth::user();
             $success['token'] =  $user->createToken('MyApp')-> accessToken;
+            $success['user'] =  $user;
             return response()->json(['success' => $success], $this-> successStatus);
         }
         else{
@@ -102,7 +103,8 @@ class AppClientCtrl extends Controller
         $input['role_id'] = 2;
         $user = User::create($input);
         $success['token'] =  $user->createToken('MyApp')-> accessToken;
-        $success['name'] =  $user->name;
+        $success['user'] =  $user;
+//        $success['name'] =  $user->name;
 
 
         return response()->json(['success'=>$success], $this-> successStatus);

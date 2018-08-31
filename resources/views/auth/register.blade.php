@@ -16,19 +16,24 @@
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-                                <select name="role_id">
-                                    @foreach(Helper::getRoles() as $role)
-                                        {{--<optgroup label="test">--}}
-                                            <option value="{{ $role->id }}">{{ $role->role }}</option>
-                                        {{--</optgroup>--}}
-                                    @endforeach
-                                </select>
+
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
                             </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="name" class="col-md-4 col-form-label text-md-right"></label>
+                            <select name="role_id" class="form-control">
+                                @foreach(Helper::getRoles() as $role)
+                                    {{--<optgroup label="test">--}}
+                                    <option value="{{ $role->id }}">{{ $role->role }}</option>
+                                    {{--</optgroup>--}}
+                                @endforeach
+                            </select>
                         </div>
 
                         <div class="form-group row">
