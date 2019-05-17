@@ -11,9 +11,11 @@ use Illuminate\Support\Facades\Session;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('404', function () {
+    return view('admin.errors.404');
+});
 
-
-Route::group(['middleware' => ['web', 'auth']], function (){
+Route::group(['middleware' => ['web', 'auth', 'isAdmin']], function (){
 
     Route::get('/', 'AdminCtrl@index');
     Route::get('/admin/home', 'AdminCtrl@home');

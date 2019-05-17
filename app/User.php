@@ -22,6 +22,8 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
+
+
     /**
      * The attributes that should be hidden for arrays.
      *

@@ -1,0 +1,35 @@
+Register :
+POST : http://tamayyozz.net/api/register?name=esraa&email=esr@hotmail.com&password=12345678&c_password=12345678
+{
+    "success": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJiMzM3MThlYzAxODM5NGVhMGE5YTFiMzBjMzU5NzhhMWI5Mjk0MDg5NmE0MjA4MTk0ZDQyNzQ0ZDQyZjYyNDhmNzAzOTljNWUzMzBmZDQwIn0.eyJhdWQiOiIxIiwianRpIjoiYmIzMzcxOGVjMDE4Mzk0ZWEwYTlhMWIzMGMzNTk3OGExYjkyOTQwODk2YTQyMDgxOTRkNDI3NDRkNDJmNjI0OGY3MDM5OWM1ZTMzMGZkNDAiLCJpYXQiOjE1NTcyMTg4MDIsIm5iZiI6MTU1NzIxODgwMiwiZXhwIjoxNTg4ODQxMjAyLCJzdWIiOiIyNjkyMiIsInNjb3BlcyI6W119.nXOH9fV2mdscyS7GSSskAwDccVOaQ7ZH5dFj476iCDdV0ZZ9uVGTA2wjEpZtp0lJ4b52VKc6gdhPMrII9jegj-d3C2z-1o8uwqFxAfkNOrk1NLQHOyIEpbApbRTkvICQshGNmhwBa90YjQfeaKu8UBbcuJymjkzdkUeTdJqJzqfKMQxk56du-eeZKq-iZFfxp9S-jdhDXOlFagsOhlB2GaFluGtVARsDUcUnsnYm_uqpE12nXinG9xDRsAiYkMFMormQ4LBTVp4MA6bm8JKHFdkydoalr8lKLFb_VHB74x6O8JSqHqmz2Bc8sdqCljrqIdqZ0Bnc9TEmLjqIAuRJhX-T09nMPD7Z8RJD8SuhbOSr98uIYUaCDiBW6frVsN_SxxeA-hdERUVYLiv8BICPLiKlfq97gbfPkVYT-kGY5WrXElERGhVfUCSTdZq-L14DPnBjh_EDHqRGcvRpuEsJj3bGwqkRPYoFZHyftdUUK7lbQo5XiAyX7zwdefJFCr-ndFbexi7i89z05gLc20kACCXWnBiKeqpFf0pzKB5_kNkzVeUPHinsO4Y5C_DXkxVc9-JwqwceAeH2NG2Gpjo8GoBNhDaiVsu9UlnEpnYMFLiEnYU6Wv3sHu4lHFst0axndq0FZSTh26zmR5n_1U0JXMcQxtY2k9IZ41-S_ajViRY",
+        "user": {
+            "name": "esraa",
+            "email": "esr@hotmail.com",
+            "role_id": 2,
+            "updated_at": "2019-05-07 08:46:42",
+            "created_at": "2019-05-07 08:46:42",
+            "id": 26922
+        }
+    }
+}
+
+Login :
+POst: http://tamayyozz.net/api/login?email=esr@hotmail.com&password=12345678
+
+{
+    "success": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjMzY2U0ZmJlYTllMTlhNDY0ZDlkYzE3MTNjZjcwOGI2MzFlZDVkODNjMTg3MzA3N2EzZTM1MDRlOTNiYjA5YzIzOTlkM2Y3ZmVmNDEzMDA1In0.eyJhdWQiOiIxIiwianRpIjoiMzNjZTRmYmVhOWUxOWE0NjRkOWRjMTcxM2NmNzA4YjYzMWVkNWQ4M2MxODczMDc3YTNlMzUwNGU5M2JiMDljMjM5OWQzZjdmZWY0MTMwMDUiLCJpYXQiOjE1NTcyMTkxMzYsIm5iZiI6MTU1NzIxOTEzNiwiZXhwIjoxNTg4ODQxNTM2LCJzdWIiOiIyNjkyMiIsInNjb3BlcyI6W119.5jK0BkxPvHdbk_eoHTGXX3yraFzObK4n4RWYAW9DHHVSvDbBTXrin8MQOpgZyKUzWbV_Z49nO5f_780rOBKD4cTZLMrlqwntHtOR_b_qyoi5PCJb0gn9i3xzEsWC1pmWJzCsdFWZrvaqIOv0XAuUfTj_9X1Dn42sZ7VFMYpDlvIyX8UuAUt7G7pHD_uX4pSIHN_sqM4mThEJX0mutvsxgp6zEYY5ApFQBkdR7oLd9uiqUKdLWXjP-S9HbjvXJKfma3-snHfhBoyRMBru_fVhhS2nPoGoeHamVlLLV5sQSi6wNhUSas17nRF5fV2qSf6jD6Hjfvvay_VPjaFUkJ4vk70luG9EiFaGedvqoGVgE69v77F2XP5KUVYfDJ027LVBcyU0KnkZUrlhaMV0x65JEliZts7ZKznJAzb2bGXsM0wxlWRQPFqqnzmuG3iziwS0YfsLS8w4apTBoqird0-1JTaYGdl5wtvgdJb3xSUPeaKo37AS2_K6-6xL8Tr0_ND1Z4Jy39exGoz9-NSzZLFzsr9sKoVXvQigKm5RWEgihAalye8wygYVSKaJ3CbBrNWLf1rL9O3nMTUcLs-mXSbP6IvSxyn6V1ffcpln8AWWv4E6Vda_Rznw8LyeQK8PHoQGeVESsX0j0rWBrgxBolBje1z8bxC4xxuMhF6aX1904Go",
+        "user": {
+            "id": 26922,
+            "name": "esraa",
+            "email": "esr@hotmail.com",
+            "avatar": null,
+            "role_id": "2",
+            "mobile": null,
+            "is_active": "0",
+            "created_at": "2019-05-07 08:46:42",
+            "updated_at": "2019-05-07 08:46:42"
+        }
+    }
+}
