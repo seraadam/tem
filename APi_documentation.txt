@@ -1,4 +1,7 @@
 Register :
+
+cpanel password : ate)k;5q0pN%
+
 POST : http://tamayyozz.net/api/register?name=esraa&email=esr@hotmail.com&password=12345678&c_password=12345678
 {
     "success": {
